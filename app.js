@@ -3,6 +3,7 @@ const currentOutput = document.querySelector(".currentOutput");
 const numberButtons = document.querySelectorAll(".numberButtons");
 const operations = document.querySelectorAll(".operation");
 const equals = document.querySelector(".equals");
+const clear = document.querySelector(".clear");
 
 let operrand1 = "";
 let operrand2 = "";
@@ -38,6 +39,14 @@ operations.forEach((op) => {
 
 equals.addEventListener("click", () => {
   calculate();
+});
+
+clear.addEventListener("click", () => {
+  operrand1 = "";
+  operrand2 = "";
+  operation = null;
+  result = null;
+  currentOutput.innerHTML = "";
 });
 
 const calculate = () => {

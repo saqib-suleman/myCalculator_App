@@ -58,7 +58,7 @@ button {
   font-size: 45px !important;
 }
 
-.calculator .operrand {
+.calculator .operation {
   background-color: #bfece9;
   font-size: 35px !important;
 }
@@ -67,6 +67,7 @@ button {
   background-color: #f5f5f5;
 }
 
-.calculator .top3Buttons {
-  background-color: #f5f5f5;
+.calculator .clear {
+  grid-column: 1/4;
+  background-color: #14bb3e;
 }
